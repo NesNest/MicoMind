@@ -23,3 +23,5 @@ frontend/*.local
 *.sln
 *.sw?
 
+backend/__pycache__/
+backend/venv/
