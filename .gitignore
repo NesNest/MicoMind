@@ -1,3 +1,10 @@
+#.env
+backend/.env
+frontend/.env
+
+# Python virtual environment
+backend/venv/
+
 # Logs
 frontend/logs
 frontend/*.log
@@ -7,10 +14,16 @@ frontend/yarn-error.log*
 frontend/pnpm-debug.log*
 frontend/lerna-debug.log*
 
+# Dependency directories
 frontend/node_modules
 frontend/dist
 frontend/dist-ssr
 frontend/*.local
+backend/node_modules/
+
+# Python cache files
+backend/__pycache__/
+backend/app/__pycache__/
 
 # Editor directories and files
 .vscode/*
@@ -23,5 +36,3 @@ frontend/*.local
 *.sln
 *.sw?
 
-backend/__pycache__/
-backend/venv/
