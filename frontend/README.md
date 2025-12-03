@@ -49,4 +49,9 @@ Preview the build locally:
 npm run preview
 ```
 
-b
+## Style & Conventions
+
+- Prettier: automatic formatting on save
+- ESLint: linting for code quality
+- Bootstrap: layout and components
+- Commit messages: follow Conventional Commits
