@@ -1,0 +1,13 @@
+@use "../../styles/globals" as *;
+
+.contenedor {
+  position: absolute;
+  width: 1243px;
+  height: 64px;
+  left: 102px;
+  top: 48px;
+
+  background: $brand-primary;
+  box-shadow: $shadow-color;
+  border-radius: $brand-radius;
+}

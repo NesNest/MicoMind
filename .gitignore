@@ -36,3 +36,5 @@ backend/app/__pycache__/
 *.sln
 *.sw?
 
+# Mac system files
+node_modules/
