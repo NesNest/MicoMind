@@ -1,4 +1,8 @@
-# React + TypeScript + Vite
+# Frontend Micomind
+
+![Deployment](https://img.shields.io/badge/deployed-GitHub%20Pages-purple)
+
+![Version](https://img.shields.io/badge/version-0.0.1-orange)
 
 This project uses the **React + Vite + TypeScript** template.  
 It provides a minimal setup with Hot Module Replacement (HMR) and ESLint rules for code quality.
@@ -6,6 +10,27 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Project Structure
+
+frontend/
+├── public/ # Static assets (favicon, manifest, etc.)
+├── src/
+│ ├── app/
+│ │ ├── App.tsx # Root component
+│ │ ├── main.tsx # Entry point (mounts React to DOM)
+│ │ ├── routes.tsx # Route definitions
+│ ├── assets/ # Images, SVGs, etc.
+│ ├── components/ # Reusable UI components
+│ ├── layouts/ # Page layouts (e.g., with navbar/footer)
+│ ├── pages/ # Route-level views (Home, About, etc.)
+│ ├── styles/ # Global and modular styles
+│ ├── config.ts # Enviroment constants
+├── .env # Environment variables (API URL, etc.)
+├── index.html # HTML template used by Vite
+├── vite.config.ts # Vite configuration
+├── package.json # Project metadata and dependencies
+└── `README.md` # Project documentation
 
 ## Prerequisites
 

@@ -1,0 +1,10 @@
+.footer {
+  margin: camp(20rem, 10rem, 100rem);
+  align-items: center;
+}
+.item {
+  display: flex;
+  p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+}

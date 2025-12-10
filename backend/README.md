@@ -1,4 +1,6 @@
-# Overview
+# Backend
+
+![Python](https://img.shields.io/badge/python-3.11-blue)
 
 This is the backend service for **MicoMind**, built with **FastAPI**.  
 It provides the API and business logic that powers the frontend application.
@@ -7,11 +9,18 @@ It provides the API and business logic that powers the frontend application.
 
 backend/
 ├── app/
-│ ├── main.py ← FastAPI entry point
-│ └── ... ← additional modules
-├── requirements.txt ← Python dependencies
-├──.env
-└── README.md ← this file
+│ ├── api/ # FastAPI route definitions (e.g., `routes.py`)
+│ ├── application/ # Business logic, services, use cases
+│ ├── core/ # Core configuration and utilities
+│ │ ├── `config.py `# Centralized environment settings using Pydantic
+│ ├── domain/ # Interfaces, abstractions, contracts
+│ ├── models/ # Data models (Pydantic, SQLAlchemy, etc.)
+│ │ └── `__init__.py` # Core module initializer
+│ └── `main.py`# FastAPI entry point
+├── requirements.txt # Backend dependencies
+├── .env # Environment variables for local development
+├── `README.md` # Backend documentation
+└── venv/ # Python virtual environment
 
 ## Prerequisites
 

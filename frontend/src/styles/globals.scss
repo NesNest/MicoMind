@@ -1,1 +1,19 @@
-@import "./variables";
+@use "./variables" as *;
+
+body {
+  background-color: $mcm-color-background;
+}
+
+.explanation-text {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 900;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
+}
