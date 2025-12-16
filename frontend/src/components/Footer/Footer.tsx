@@ -2,7 +2,7 @@ import style from "./Footer.module.scss";
 export function Footer() {
   return (
     <div className={style["footer"]}>
-      <hr />;
+      <hr />
       <div className={style["item"]}>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit

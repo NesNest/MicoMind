@@ -1,9 +1,56 @@
-.button.btn-dark {
-  background-color: #007bff;
-  color: white;
+@use "../../styles/_variables" as *;
+
+/* Base button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   border: none;
-  margin: 10px 20px;
-  border-radius: 4px;
+  border-radius: 9px;
   cursor: pointer;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 120ms ease, transform 120ms ease,
+    box-shadow 120ms ease;
+}
+
+/* Variants */
+.mcm-primary {
+  background-color: $mcm-color-primary;
+  color: #fff;
+}
+
+.mcm-login {
+  background-color: $mcm-color-primary;
+  color: #fff;
+  border: #fff 2px solid;
+}
+
+.mcm-sign {
+  background-color: #ffffff;
+  color: $mcm-color-primary;
+}
+
+/* Sizes */
+.sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.md {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.lg {
+  padding: 0.75rem 1.25rem;
+  font-size: 1.125rem;
+}
+
+/* Disabled state */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
 }

@@ -1,8 +1,10 @@
 .footer {
-  margin: camp(20rem, 10rem, 100rem);
   align-items: center;
+  justify-content: space-around;
 }
 .item {
+  padding: 1.5rem;
+
   display: flex;
   p {
     font-size: clamp(1rem, 3vw, 1.5rem);

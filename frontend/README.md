@@ -13,6 +13,7 @@ Currently, two official plugins are available:
 
 ## Project Structure
 
+```txt
 frontend/
 ├── public/ # Static assets (favicon, manifest, etc.)
 ├── src/
@@ -31,6 +32,7 @@ frontend/
 ├── vite.config.ts # Vite configuration
 ├── package.json # Project metadata and dependencies
 └── `README.md` # Project documentation
+```
 
 ## Prerequisites
 
