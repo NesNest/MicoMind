@@ -1,9 +1,10 @@
 import styles from "./Button.module.scss";
+import type { ButtonVariant, ButtonSize } from "./button.types";
 
 type ButtonProps = {
   children: React.ReactNode;
-  variant?: "mcm-primary" | "mcm-login" | "mcm-sign";
-  size?: "sm" | "md" | "lg";
+  variant?: ButtonVariant;
+  size?: ButtonSize;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   type?: "button" | "submit" | "reset";
   disabled?: boolean;

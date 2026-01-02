@@ -1,32 +1,23 @@
-import { RouterProvider } from "react-router-dom";
-import { router } from "./routes.tsx";
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "./../layouts/MainLayout";
+import AuthLayout from "../layouts/AuthLayout";
 
-// import { useEffect, useState } from "react";
-// import { API_URL } from "../config.ts";
+import Home from "./../pages/Home/Home";
+import Login from "./../pages/Login/Login";
+import LoginEmail from "./../pages/Login/LoginEmail";
 
 function App() {
-  //   const [mensaje, setMensaje] = useState("");
-
-  //   useEffect(() => {
-  //     const apiUrl = `${API_URL}`;
-
-  //     fetch(apiUrl)
-  //       .then((res) => res.json())
-  //       .then((data) => setMensaje(data.Hello))
-  //       .catch((err) => console.error("Error al conectar con el backend:", err));
-  //   }, []);
-
-  //   return (
-  //     <>
-  //       <div>
-  //         <p>Respuesta del backend: {mensaje}</p>{" "}
-  //       </div>
-  //     </>
-  //   );
-  // }
-
-  // export default App;
-
-  return <RouterProvider router={router} />;
+  return (
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<Home />} />
+      </Route>
+      <Route path="login" element={<AuthLayout />}>
+        <Route index element={<Login />} />
+        <Route path="email" element={<LoginEmail />} />
+      </Route>
+    </Routes>
+  );
 }
+
 export default App;

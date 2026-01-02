@@ -7,6 +7,7 @@ It provides the API and business logic that powers the frontend application.
 
 ## Project Structure
 
+```text
 backend/
 ├── app/
 │ ├── api/ # FastAPI route definitions (e.g., `routes.py`)
@@ -21,6 +22,7 @@ backend/
 ├── .env # Environment variables for local development
 ├── `README.md` # Backend documentation
 └── venv/ # Python virtual environment
+```
 
 ## Prerequisites
 

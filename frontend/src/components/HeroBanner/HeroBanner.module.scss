@@ -1,4 +1,5 @@
 @use "../../styles/_variables" as *;
+
 .hero-banner {
   display: flex;
   justify-content: center;
@@ -9,15 +10,15 @@
 
   padding: 0.5rem 5rem;
   border-radius: 70px;
-  box-shadow: $mcm-color-shadow 0px 4px 4px;
+  box-shadow: $mcm-shadow;
 
   width: fit-content;
   margin: 4rem auto;
 
   font-size: 4rem;
-
   font-weight: bold;
   text-align: center;
+  text-shadow: $mcm-shadow;
 
   transition: transform 0.2s ease;
 
