@@ -21,11 +21,12 @@
   }
   p {
     color: variables.$mcm-color-tertiary;
+    font-size: medium;
     font-weight: 600;
-    height: 0.5rem;
+    height: 100%;
     flex: wrap;
     text-align: center;
-    width: 20rem;
+    width: 25rem;
   }
   &__title {
     font-family: "Open Sans", sans-serif;
@@ -38,11 +39,15 @@
   &__buttons {
     @include flex-center(1rem);
     width: 20rem;
+    gap: 1rem;
+    height: 15.5rem;
     button {
       width: 100%;
     }
+
     &__link {
       width: 100%;
+      margin: 1rem;
     }
   }
   &__header {

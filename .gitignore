@@ -40,3 +40,4 @@ backend/app/core/__pycache__/
 # Mac system files
 node_modules/
 
+backend/app/__pycache__/main.cpython-312.pyc

@@ -1,16 +1,14 @@
-import Button from "./Button";
+import ButtonLink from "./ButtonLink";
+const backendUrl = import.meta.env.VITE_API_URL;
+
 type Props = {
   children: React.ReactNode;
 };
 const ButtonLogin = ({ children }: Props) => {
-  const handleLoginClick = () => {
-    // Implement login logic here
-    console.log("Login button clicked");
-  };
   return (
-    <Button variant="mcm-white" size="lg" onClick={handleLoginClick}>
+    <ButtonLink variant="mcm-white" size="lg" to={`${backendUrl}/auth/google`}>
       {children}
-    </Button>
+    </ButtonLink>
   );
 };
 
