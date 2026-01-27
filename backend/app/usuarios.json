@@ -1,18 +1,18 @@
 {
-    "users": {
-        "angel": {
-            "username": "edgy",
-            "email": "edgy@angel.com"
-        },
-        "luis": {
-            "username": "luistonto",
-            "email": "luis@angel.com"
-        },
-        "test@example.com": {
-            "id": "1234567890",
-            "email": "test@example.com",
-            "name": "Usuario Prueba",
-            "picture": "https://example.com/foto.png"
-        }
+  "users": {
+    "angel": {
+      "username": "edgy",
+      "email": "edgy@angel.com"
+    },
+    "luis": {
+      "username": "luistonto",
+      "email": "luis@angel.com"
+    },
+    "test@example.com": {
+      "id": "1234567890",
+      "email": "test@example.com",
+      "name": "Usuario Prueba",
+      "picture": "https://example.com/foto.png"
     }
+  }
 }
