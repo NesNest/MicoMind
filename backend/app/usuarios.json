@@ -1,18 +1,34 @@
 {
-  "users": {
-    "angel": {
-      "username": "edgy",
-      "email": "edgy@angel.com"
-    },
-    "luis": {
-      "username": "luistonto",
-      "email": "luis@angel.com"
-    },
-    "test@example.com": {
-      "id": "1234567890",
-      "email": "test@example.com",
-      "name": "Usuario Prueba",
-      "picture": "https://example.com/foto.png"
+    "users": {
+        "angel": {
+            "username": "edgy",
+            "email": "edgy@angel.com"
+        },
+        "luis": {
+            "username": "luistonto",
+            "email": "luis@angel.com"
+        },
+        "test@example.com": {
+            "id": "1234567890",
+            "email": "test@example.com",
+            "name": "Usuario Prueba",
+            "picture": "https://example.com/foto.png"
+        },
+        "timedclient@gmail.com": {
+            "id": "107661253628715569735",
+            "email": "timedclient@gmail.com",
+            "name": "N\u00e9stor Guerrero",
+            "picture": "https://lh3.googleusercontent.com/a/ACg8ocI2xp7NR9rMXOstqCUhB5NNz1gfZvNWT6-2XJSRVaXby74lpZGFNQ=s96-c",
+            "isActive": true,
+            "isSuperuser": false
+        },
+        "piolinvolador69@gmail.com": {
+            "id": "107363044005293751549",
+            "email": "piolinvolador69@gmail.com",
+            "name": "piolin69",
+            "picture": "https://lh3.googleusercontent.com/a/ACg8ocInMUStIXCNNdasi_sijSEWaWvJpQipI7ekUYV56P1CBh6GZg=s96-c",
+            "isActive": true,
+            "isSuperuser": false
+        }
     }
-  }
 }

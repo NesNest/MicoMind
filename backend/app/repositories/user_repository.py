@@ -17,24 +17,30 @@ class UserRepository:
     def get_by_email(self, email: str) -> User | None:
         data = self._load()
         if email in data["users"]:
+    
             return User(**data["users"][email])
         return None
     
-    def new_user(self, user_info: dict):
+    def new_user(self, user_info: dict) -> None:
         data = self._load()
 
         new_user_data = {
             "id": user_info.get("sub", ""),
             "email": user_info.get("email", ""),
             "name": user_info.get("name", ""),
-            "picture": user_info.get("picture", "")
+            "picture": user_info.get("picture", ""),
+            "isActive": True,
+            "isSuperuser": False
         }
 
         data["users"][user_info["email"]] = new_user_data
         self._save(data)
+        return User(**new_user_data)
 
-        
-    def save(self, user: User):
+    def is_active(self, user: User) -> bool:
+        return user.isActive
+
+    def save(self, user: User) -> None:
         data = self._load()
         data["users"][user.email] = user.model_dump()
         self._save(data)

@@ -6,7 +6,7 @@ from app.core.config import settings
 SECRET_KEY = settings.SECRET_KEY
 ALGORITHM = settings.ALGORITHM
 
-def create_jwt(user: dict, expires: timedelta = timedelta(hours=60)) -> str:
+def create_jwt(user: dict, expires: timedelta = timedelta(minutes=10)) -> str:
     payload = {
         "user_id": user["id"], 
         "email": user["email"], 

@@ -1,6 +1,8 @@
 import styles from "./Login.module.scss";
-import { ButtonLogin, ButtonLink } from "../../components/Button";
+import { ButtonLink } from "../../components/Button";
 import Input from "../../components/Input/Input";
+import GoogleLoginButton from "../../components/GoogleLogin/GoogleLoginButton";
+
 export default function Login() {
   return (
     <div className={styles["login-container"]}>
@@ -14,7 +16,13 @@ export default function Login() {
       </div>
 
       <div className={styles["login-container__buttons"]}>
-        <ButtonLogin>Continuar con Google</ButtonLogin>
+        <GoogleLoginButton
+          onLoginSucess={(token: string) => {
+            localStorage.setItem("access_token", token);
+            window.location.href = "/";
+          }}
+        />
+
         <p>o ingresa con tu correo electrónico</p>
         <Input type="string" placeholder="tucorreoejemplo.com"></Input>
         <ButtonLink

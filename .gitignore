@@ -32,6 +32,7 @@ backend/app/domain/__pycache__/
 backend/app/routes/__pycache__/
 backend/app/services/__pycache__/
 backend/app/application/__pycache__/
+backend/app/dependencies/__pycache__/   
 backend/app/repositories/__pycache__/
 backend/app/infrastructure/__pycache__/
 
